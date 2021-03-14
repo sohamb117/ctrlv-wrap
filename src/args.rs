@@ -2,7 +2,7 @@ use clap::Clap;
 use std::path::PathBuf;                                                                  
                                                                                          
 #[derive(Clap)]                                                                          
-#[clap(name = "ctrl-vwrap", about = "Simple Wrapper for Ctrl-V")]                                   
+#[clap(name = "ctrlv-wrap", about = "Simple Wrapper for Ctrl-V")]                                   
 pub struct Args {                                                                        
     /// Input file                                                                       
     #[clap(parse(from_os_str))]                                                          
