@@ -5,8 +5,8 @@ use std::path::PathBuf;
 #[clap(name = "ctrlv-wrap", about = "Simple Wrapper for Ctrl-V")]                                   
 pub struct Args {                                                                        
     /// Input file                                                                       
-    #[clap(parse(from_os_str))]                                                          
-    pub file: PathBuf,                                                                   
+    #[clap(required=false, parse(from_os_str))]                                                          
+    pub file: PathBuf,
     /// Title of the file                                                  
     #[clap(short, long)]                                                                 
     pub title: String,                                                      

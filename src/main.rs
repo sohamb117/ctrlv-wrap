@@ -9,6 +9,7 @@ use std::{
     fs::File,
     io::Read,
 };
+use anyhow::Context;
 
 fn main() {
     let options: Args = Args::parse();
